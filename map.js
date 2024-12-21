@@ -13,17 +13,33 @@ const lengthsOf = function (strings) {
 };
 
 // uppercase of ["hello", "world"] => ["HELLO", "WORLD"]
-const uppercaseOf = function (strings) { };
+const uppercaseOf = function (strings) { 
+  return strings.map(function(word) {
+    return word.toUpperCase();
+  });
+};
 
 // first characters of ["apple", "banana", "kiwi"] => ["a", "b", "k"]
-const firstCharactersOf = function (strings) { };
+const firstCharactersOf = function (strings) { 
+  return strings.map(function(word) {
+    return word[0];
+  });
+};
 
 // truth values of [0, 1, 2, 3] => [false, true, true, true]
 // Assume non-zero numbers are true, and zero is false
-const truthValuesOf = function (numbers) { };
+const truthValuesOf = function (numbers) { 
+  return numbers.map(function(number) {
+    return number > 0;
+  });
+};
 
 // reverse strings of ["hello", "world"] => ["olleh", "dlrow"]
-const reversedStringsOf = function (strings) { };
+const reversedStringsOf = function (strings) { 
+  return strings.map(function(word) {
+    return word.split('').reverse().join('');
+  });
+};
 
 // double letters of ["cat", "dog", "bat"] => ["ccaat", "ddoog", "bbaatt"]
 const doubleLettersOf = function (strings) { };
