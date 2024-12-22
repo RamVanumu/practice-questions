@@ -1,14 +1,28 @@
 // even numbers [1, 2, 3, 4, 5] => [2, 4]
-const filterEvenNumbers = function (numbers) { };
+const filterEvenNumbers = function (numbers) { 
+  return numbers.filter(function (number) {
+    return number % 2 === 0;
+  });
+};
 
 // words with more than 5 letters ["apple", "banana", "kiwi", "grape"] => ["banana"]
-const filterLongWords = function (words) { };
+const filterLongWords = function (words) { 
+  return words.filter(function (word) {
+    return word.length > 5;
+  });
+};
 
 // people older than 30 [{name: "Alice", age: 25}, {name: "Bob", age: 35}] => [{name: "Bob", age: 35}]
-const filterAdults = function (people) { };
+const filterAdults = function (people) { 
+  return people.filter(function (person) {
+    return person.age > 30;
+  })
+};
 
 // active users [{username: "alice", active: true}, {username: "bob", active: false}] => [{username: "alice", active: true}]
-const filterActiveUsers = function (users) { };
+const filterActiveUsers = function (users) { 
+  
+};
 
 // numbers greater than 10 [5, 12, 7, 18, 3] => [12, 18]
 const filterNumbersGreaterThanTen = function (numbers) { };
